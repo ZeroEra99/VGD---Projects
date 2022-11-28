@@ -685,7 +685,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 171829325}
-  - component: {fileID: 171829326}
   m_Layer: 0
   m_Name: playerStats
   m_TagString: Untagged
@@ -709,19 +708,6 @@ Transform:
   m_Father: {fileID: 420157726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &171829326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171829324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4af3a0593d485964fb885acf9d7d7d9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LastCheckpoint: {fileID: 0}
 --- !u!1 &208284659
 GameObject:
   m_ObjectHideFlags: 0
@@ -3596,6 +3582,7 @@ GameObject:
   - component: {fileID: 1424157075}
   - component: {fileID: 1791395197}
   - component: {fileID: 1791395196}
+  - component: {fileID: 1791395198}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -5061,6 +5048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bodyMovement: {fileID: 1722907527}
   _spawnManager: {fileID: 1791395197}
+  _playerStats: {fileID: 1791395198}
 --- !u!114 &1791395197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5076,6 +5064,19 @@ MonoBehaviour:
   _body: {fileID: 1722907527}
   defaultSpawnPoint: {fileID: 76058302}
   respawnPoint: {fileID: 0}
+--- !u!114 &1791395198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424157074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af3a0593d485964fb885acf9d7d7d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LastCheckpoint: {fileID: 0}
 --- !u!1 &1846124586
 GameObject:
   m_ObjectHideFlags: 0
