@@ -15,6 +15,6 @@ public class DisplayHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textMesh.text = PlayerStats.currentHealth.ToString();
+        textMesh.text = "Health:\n" + PlayerStats.currentHealth.ToString();
     }
 }

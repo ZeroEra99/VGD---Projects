@@ -15,6 +15,6 @@ public class DisplayMana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textMesh.text = PlayerStats.currentMana.ToString();
+        textMesh.text = "Mana:\n" + PlayerStats.currentMana.ToString();
     }
 }

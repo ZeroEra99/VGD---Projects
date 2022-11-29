@@ -15,6 +15,6 @@ public class DisplayStartParameters : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textMesh.text = PlayerStats.startValues;
+        textMesh.text = "Start Parameters:\n" + PlayerStats.startParams;
     }
 }
