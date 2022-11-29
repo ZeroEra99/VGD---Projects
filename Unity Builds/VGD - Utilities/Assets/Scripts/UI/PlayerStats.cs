@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     // Player stats with initial value
-    public static Transform LastCheckpoint;
+    [SerializeField] public static Transform LastCheckpoint;
 
     public static int maxLives = 3;
     public static int maxHealth = 100;
@@ -47,15 +47,4 @@ public class PlayerStats : MonoBehaviour
     {
 
     }
-
-
-    public void useMana(int mana)
-    {
-        currentMana -= mana;
-    }
-    public void takeDamage(int damage)
-    {
-        currentHealth -= damage;
-    }
-
 }

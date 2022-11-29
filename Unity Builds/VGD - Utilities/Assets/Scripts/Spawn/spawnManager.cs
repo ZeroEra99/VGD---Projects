@@ -10,7 +10,6 @@ public class spawnManager : MonoBehaviour
 
     [SerializeField] private BodyMovement _body;
     [SerializeField] public Transform defaultSpawnPoint;
-    public Transform respawnPoint;
 
     private void Awake()
     {
@@ -19,10 +18,12 @@ public class spawnManager : MonoBehaviour
     }
 
     //This is used inside the checkPoint.cs script to modify the local respawnPoint variable.
+
     public void SetSpawnPoint(Transform respawnPointUpdated)
     {
-        respawnPoint = respawnPointUpdated;
+        PlayerStats.LastCheckpoint = respawnPointUpdated;
     }
+
     public void Spawn(Transform spawnPoint)
     {
         //Moves the character to the spawn Point

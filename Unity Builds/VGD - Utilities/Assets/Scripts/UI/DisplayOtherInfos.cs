@@ -15,10 +15,6 @@ public class DisplayOtherInfos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-         For this to work the variable has to be assigned first
-         */
-        textMesh.text = "Last checkpoint:\n";
-        // textMesh.text = "Last checkpoint:\n" + PlayerStats.LastCheckpoint.ToString();
+        textMesh.text = "Last checkpoint:\n" + PlayerStats.LastCheckpoint.ToString();
     }
 }

@@ -18,6 +18,6 @@ public class Player : MonoBehaviour
     private void Update()
     {
         _bodyMovement.move();
-        if (Input.GetKeyDown(KeyCode.T)) _spawnManager.Spawn(_spawnManager.respawnPoint); //Respawn the character when pressing T
+        if (Input.GetKeyDown(KeyCode.T)) _spawnManager.Spawn(PlayerStats.LastCheckpoint); //Respawn the character when pressing T
     }
 }
